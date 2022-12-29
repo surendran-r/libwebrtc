@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#include <limits>
 #include <webrtc/api/peerconnectioninterface.h>
 #include <webrtc/base/ssladapter.h>
 #include <webrtc/base/thread.h>
