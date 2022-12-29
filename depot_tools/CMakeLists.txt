@@ -15,6 +15,7 @@ ExternalProject_Add(
 
     GIT_REPOSITORY https://chromium.googlesource.com/chromium/tools/depot_tools
     GIT_TAG main
+    GIT_SHALLOW true
 
     PREFIX ${CMAKE_BINARY_DIR}/depot_tools
 
