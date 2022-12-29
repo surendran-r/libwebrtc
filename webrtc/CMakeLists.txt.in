@@ -76,6 +76,8 @@ if (UNIX AND NOT APPLE)
     set(SYSROOT_ARCH "amd64")
   elseif (SYSROOT_ARCH STREQUAL "x86")
     set(SYSROOT_ARCH "i386")
+  elseif (SYSROOT_ARCH STREQUAL "aarch64")
+    set(SYSROOT_ARCH "arm64")
   endif (SYSROOT_ARCH STREQUAL "x64")
 
   libwebrtc_command(
