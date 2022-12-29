@@ -87,6 +87,13 @@ if (UNIX AND NOT APPLE)
       COMMENT "Retrieving sysroot for ${SYSROOT_ARCH} "
       DEPENDS webrtc-sync
   )
+    libwebrtc_command(
+      NAME webrtc-toolchain
+      COMMAND ${PYTHON_EXECUTABLE} ${WEBRTC_PARENT_DIR}/src/build/linux/sysroot_scripts/install-sysroot.py --all
+      WORKING_DIRECTORY "${WEBRTC_PARENT_DIR}"
+      COMMENT "Retrieving sysroot for host"
+      DEPENDS webrtc-sync
+  )
   set(_DEPENDENCIES ${_DEPENDENCIES} webrtc-toolchain)
 
   set(_PLATFORM linux*)
