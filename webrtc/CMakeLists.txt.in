@@ -5,7 +5,7 @@ find_package(Git REQUIRED)
 if (WIN32)
   set(PYTHON_EXECUTABLE ${DEPOT_TOOLS_PATH}/python.bat)
 else (WIN32)
-  find_package(PythonInterp 2.7 REQUIRED)
+  find_package(PythonInterp 3.0 REQUIRED)
 endif (WIN32)
 
 include(LibWebRTCExecute)
