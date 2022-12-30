@@ -127,7 +127,7 @@ libwebrtc_command(
     COMMAND ${_CLANG_FORMAT_COMMAND}
     WORKING_DIRECTORY "${WEBRTC_PARENT_DIR}"
     COMMENT "Fetching clang-format${_SUFFIX} for ${_PLATFORM}"
-    DEPENDS webrtc-gn
+    DEPENDS webrtc-sync
 )
 set(_DEPENDENCIES ${_DEPENDENCIES} webrtc-clang-format)
 
